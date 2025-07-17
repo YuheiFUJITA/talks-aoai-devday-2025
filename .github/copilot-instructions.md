@@ -51,6 +51,7 @@ For detailed Slidev usage and features, refer to DeepWiki: https://deepwiki.com/
 - YAML frontmatter at top for theme, title, transitions
 - MDC (Markdown Components) syntax enabled
 - Supports Vue components inline
+- **Speaker notes required**: Every slide MUST include speaker notes for presentation guidance
 
 ### Example slide structure:
 
@@ -62,7 +63,22 @@ transition: slide-left
 # Slide Title
 
 Content here with Vue/MDC syntax support
+
+<!--
+Speaker notes for this slide:
+- Key talking points
+- Background context
+- Timing guidance
+- Demo instructions if applicable
+-->
 ```
+
+### Speaker Notes Guidelines
+
+- **Mandatory inclusion**: All slides must have speaker notes written in HTML comments (`<!-- -->`)
+- **Content structure**: Include talking points, context, timing, and demo instructions
+- **Language**: Write speaker notes in Japanese to match the presentation language
+- **Placement**: Add speaker notes at the end of each slide content, before the next `---` separator
 
 ## Development Environment
 
@@ -84,3 +100,4 @@ This presentation covers VS Code's evolution with GitHub Copilot and future AI-p
 - **Always verify layout integrity**: Check that slide layouts are not broken after any changes
 - **Consult DeepWiki frequently**: Use DeepWiki documentation to understand Slidev features and best practices
 - **CRITICAL: When adding new slides**: NEVER modify existing slides. Always append new slides at the very end of the `slides.md` file, after the last existing slide. Preserve all existing content unchanged.
+- **Speaker notes requirement**: Every slide must include comprehensive speaker notes in HTML comments for effective presentation delivery
