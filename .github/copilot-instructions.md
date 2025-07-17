@@ -18,6 +18,8 @@ pnpm install
 pnpm dev  # Opens browser automatically at localhost:3030
 ```
 
+**Note**: If the development server is already running on localhost:3030, you can simply refresh the browser or navigate to http://localhost:3030 to see changes. No need to run `pnpm dev` again.
+
 ### Building & Export
 
 ```bash
@@ -32,6 +34,16 @@ pnpm export   # PDF/PPTX export
 - **Configuration**: Vite config only sets server port (3030) and host settings
 
 ## Slidev-Specific Conventions
+
+### Reference Documentation
+
+For detailed Slidev usage and features, refer to DeepWiki: https://deepwiki.com/slidevjs/slidev
+
+### Key Features
+
+- **Markdown-based slides**: Slidev allows creating slides using markdown syntax
+- **Built-in layouts**: Choose layouts from https://sli.dev/builtin/layouts for proper slide structure
+- **UnoCSS integration**: CSS framework UnoCSS is built-in for styling
 
 ### Slide Syntax in slides.md
 
@@ -69,3 +81,6 @@ This presentation covers VS Code's evolution with GitHub Copilot and future AI-p
 - Slidev presentations are single-file by design - avoid splitting slides across files
 - Theme customization should be done via frontmatter, not separate CSS files
 - Preview changes instantly via hot reload on localhost:3030
+- **Always verify layout integrity**: Check that slide layouts are not broken after any changes
+- **Consult DeepWiki frequently**: Use DeepWiki documentation to understand Slidev features and best practices
+- **CRITICAL: When adding new slides**: NEVER modify existing slides. Always append new slides at the very end of the `slides.md` file, after the last existing slide. Preserve all existing content unchanged.
